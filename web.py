@@ -2,10 +2,14 @@ import os
 from urllib import request
 from flask import Flask, jsonify, request, render_template
 from flask import send_from_directory ,url_for
+from flask_bootstrap import Bootstrap
 from ydl import ydl
 
 
+
 web = Flask(__name__)
+
+bootstrap = Bootstrap(web)
 
 # Index
 @web.route('/')
