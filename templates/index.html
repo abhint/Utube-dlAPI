@@ -1,17 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube-dl API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/index_page.css') }}">
+    <link href="{{ bootstrap_find_resource('css/bootstrap.css', cdn='bootstrap') }}" rel="stylesheet">
+    <script src="{{ bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap') }}"></script>
+    <title>youtube-dl API</title>
 </head>
 
 <body>
-    <form action="{{url_for('_utubedl')}}">
-        <input type="url" name="url">
-        <button type="submit">GET API</button>
+    <form class="container" action="{{url_for('_utubedl')}}">
+        <div class="input-group">
+            <input type="text" class="form-control" autocomplete="off" name="url" placeholder="URL">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">GET API</button>
+            </span>
+        </div>
     </form>
 </body>
 
