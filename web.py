@@ -14,8 +14,8 @@ def index():
 
 # @web.route('/favicon.ico')
 # def favicon():
-    web.add_url_rule('/favicon.ico',
-                 redirect_to=url_for('static', filename='https://avatars.githubusercontent.com/u/25699289?v=4'))
+#     web.add_url_rule('/favicon.ico',
+#                  redirect_to=url_for('static', filename='https://avatars.githubusercontent.com/u/25699289?v=4'))
 
 @web.route('/ydl')
 def _utubedl():
