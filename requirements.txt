@@ -1,3 +1,6 @@
 Flask
 youtube-dl
 flask-bootstrap
+gunicorn
+requests
+flask-cors
