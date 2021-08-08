@@ -35,4 +35,4 @@ def _not_found(e):
 
 
 if __name__ == "__main__":
-    web.run(debug=True)
+    web.run(host='0.0.0.0', port=os.environ.get("PORT"), use_reloader=True, threaded=True)
