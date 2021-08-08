@@ -1,0 +1,12 @@
+{
+  "name": "youtube-dl API",
+  "description": "This  is a simple youtube-dl API.",
+  "author": "Abhijith N T",
+  "repository": "https://github.com/AbhijithNT/Utube-dlAPI",
+  "keywords": ["youtube-dl", "API"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
