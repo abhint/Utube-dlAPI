@@ -21,9 +21,9 @@ def index():
 #     web.add_url_rule('/favicon.ico',
 #                  redirect_to=url_for('static', filename='https://avatars.githubusercontent.com/u/25699289?v=4'))
 
-@web.route('/ydl')
+@web.route('/ydl' , methods=["POST"])
 def _utubedl():
-    _yt_url = request.args.get('url')
+    _yt_url = request.form['url']
     return jsonify(ydl(_yt_url))
 
 # 404
